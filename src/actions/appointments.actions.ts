@@ -9,9 +9,9 @@ export const setAllAppointments = (data: IAppointmentItem[]) => ({
   data
 })
 
-export const deleteAppointment = (id: string) => ({
+export const deleteAppointment = (data: string) => ({
   type: DELETE_APPOINTMENT,
-  id
+  data
 })
 
 export const addAppointment = (data: IAppointmentItem) => ({

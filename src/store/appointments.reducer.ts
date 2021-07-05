@@ -19,7 +19,7 @@ const appointmentsReducer = (state = initialState, action: AnyAction) => {
         data: sortedData
       }
     case actions.DELETE_APPOINTMENT:
-      const newData = state.data?.filter(el => el.id !== action.id)
+      const newData = state.data?.filter(el => el.id !== action.data)
       
       return {
         ...state,
