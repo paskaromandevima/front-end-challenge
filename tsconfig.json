@@ -1,19 +1,29 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
-    "jsx": "react",
-    "module": "es6",
+    "jsx": "react-jsx",
+    "module": "esnext",
     "noImplicitAny": true,
     "outDir": "./build/",
     "preserveConstEnums": true,
     "removeComments": true,
     "resolveJsonModule": true,
     "target": "es5",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "allowJs": true,
     "moduleResolution": "node",
     "sourceMap": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "include": [
     "./src/**/**/*"

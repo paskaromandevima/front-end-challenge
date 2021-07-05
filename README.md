@@ -1,3 +1,9 @@
+# COMMENTS
+- I've decided to display appointments only with the status "ACTIVE"
+- Rest of the code improvements and refactoring require a bit more time. We can discuss all improvements during the interview
+
+
+# TASK
 # Eugene's front-end developer challenge
 Welcome to the front-end coding challenge. We use this challenge to help guide our technical interview where we'll have an awesome geek-out about the ins and outs of React. Things to keep in mind before you start:
 - Please don't spend more than 4 hours on this project, if you're getting stuck on something then feel free to skip it and we can chat through it during the interview.

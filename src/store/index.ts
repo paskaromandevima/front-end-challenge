@@ -1,10 +1,11 @@
-import { combineReducers } from 'redux'
+import { AnyAction, combineReducers, createStore } from 'redux'
+import { IState } from '../types'
 import appointmentsReducer from './appointments.reducer'
 
-const appReducer = combineReducers({
+const appReducer = combineReducers<IState>({
   appointments: appointmentsReducer,
 })
 
-const rootReducer = (state, action) =>  appReducer(state, action)
+export const rootReducer = (state: IState, action: AnyAction) => appReducer(state, action)
 
-export default rootReducer
+export const store = createStore(rootReducer)
